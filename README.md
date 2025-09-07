@@ -4,7 +4,7 @@
 # BikeShare Project
 
 This project analyzes bike share data to uncover usage patterns and trends.  
-It provides insights into how people use bike share systems in major cities.
+It provides insights into how people use bike share systems in different cities.
 
 ## Information about how to use your project
 
