@@ -19,6 +19,10 @@ def prompt_choice(prompt: str, options) -> str:
         if choice in options_lower:
             return choice
         print(f"Invalid entry. Options: {', '.join(options_lower)}")
+        
+def print_sep(width: int = 40) -> None:
+    """Print a visual separator line."""
+    print("-" * width)
 
 def get_filters():
     """
