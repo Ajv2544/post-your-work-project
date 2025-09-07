@@ -15,7 +15,7 @@ It provides insights into how people use bike share systems in different cities.
 
 ## Contribution guidelines
 
-Contributions are welcome!  
+Contributions are always welcome!  
 - Fork the repo and create a new branch for your changes.  
 - Submit a pull request with a clear description of what you changed.  
 
