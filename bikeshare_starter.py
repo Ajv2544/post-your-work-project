@@ -6,6 +6,24 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+CITIES = {"chicago", "new york city", "washington"}
+MONTHS = ["all", "january", "february", "march", "april", "may", "june"]
+DAYS   = ["all", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+
+def prompt_choice(prompt: str, options) -> str:
+    """Prompt until the user enters a valid option (case/space-insensitive)."""
+    options_lower = [o.lower() for o in options]
+    while True:
+        choice = input(prompt).strip().lower()
+        if choice in options_lower:
+            return choice
+        print(f"Invalid entry. Options: {', '.join(options_lower)}")
+        
+def print_sep(width: int = 40) -> None:
+    """Print a visual separator line."""
+    print("-" * width)
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
